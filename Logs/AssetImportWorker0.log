@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity Hub/ZlajaGoBRRR
+C:/Users/Martin/Documents/GitHub/zLajaGoBRRRRR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3830
-Successfully changed project path to: D:/Unity Hub/ZlajaGoBRRR
-D:/Unity Hub/ZlajaGoBRRR
+1335
+Successfully changed project path to: C:/Users/Martin/Documents/GitHub/zLajaGoBRRRRR
+C:/Users/Martin/Documents/GitHub/zLajaGoBRRRRR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 25.61 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 25.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity Hub/ZlajaGoBRRR/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Martin/Documents/GitHub/zLajaGoBRRRRR/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,63 +35,63 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002512 seconds.
+Registered in 0.002485 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 26.18 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 27.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.109 seconds
+- Completed reload, in  2.123 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000636 seconds.
+Registered in 0.000805 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.854 seconds
+- Completed reload, in  0.871 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1238 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 65.7 MB.
 System memory in use after: 65.8 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1680.
-Total: 1.625000 ms (FindLiveObjects: 0.156900 ms CreateObjectMapping: 0.030900 ms MarkObjects: 1.367100 ms  DeleteObjects: 0.069400 ms)
+Total: 1.666800 ms (FindLiveObjects: 0.163500 ms CreateObjectMapping: 0.034800 ms MarkObjects: 1.392900 ms  DeleteObjects: 0.074400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Meshes/wheel 1.fbx
-  artifactKey: Guid(b277edb44c6354b4a903a3a8912061c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/wheel 1.fbx using Guid(b277edb44c6354b4a903a3a8912061c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c123fb4bb53c9732ccd7990e8a20d4') in 0.147530 seconds
-  Import took 0.155176 seconds .
+  path: Assets/Meshes/terrain 1.fbx
+  artifactKey: Guid(db7bf22f60471dc488a52a0c58820355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/terrain 1.fbx using Guid(db7bf22f60471dc488a52a0c58820355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f395c97515f050d13c13cfe6a6a8c2') in 0.230861 seconds
+  Import took 0.233175 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000706 seconds.
+Registered in 0.000794 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.778 seconds
+- Completed reload, in  0.784 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1206 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 66.6 MB.
+System memory in use before: 66.5 MB.
 System memory in use after: 66.6 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1726.
-Total: 1.512100 ms (FindLiveObjects: 0.130300 ms CreateObjectMapping: 0.027400 ms MarkObjects: 1.311100 ms  DeleteObjects: 0.042500 ms)
+Total: 1.561400 ms (FindLiveObjects: 0.125600 ms CreateObjectMapping: 0.028900 ms MarkObjects: 1.362700 ms  DeleteObjects: 0.042900 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
