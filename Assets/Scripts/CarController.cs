@@ -13,6 +13,7 @@ public class CarController : MonoBehaviour
     private float currentSteerAngle;
     private float currentbreakForce;
     private bool isBreaking;
+    private WheelFrictionCurve friction;
 
     [SerializeField] private float motorForce;
     [SerializeField] private float breakForce;
@@ -46,18 +47,38 @@ public class CarController : MonoBehaviour
 
     private void HandleMotor()
     {
-        wheelColliderLeftFront.motorTorque = verticalInput * motorForce;
-        wheelColliderRightFront.motorTorque = verticalInput * motorForce;
+        wheelColliderLeftBack.motorTorque = verticalInput * motorForce;
+        wheelColliderRightBack.motorTorque = verticalInput * motorForce;
         currentbreakForce = isBreaking ? breakForce : 0f;
         ApplyBreaking();
     }
 
     private void ApplyBreaking()
     {
-        wheelColliderRightFront.brakeTorque = currentbreakForce;
-        wheelColliderLeftFront.brakeTorque = currentbreakForce;
-        wheelColliderLeftBack.brakeTorque = currentbreakForce;
-        wheelColliderRightBack.brakeTorque = currentbreakForce;
+        if (Input.GetKey(KeyCode.LeftShift))
+        { 
+        friction = wheelColliderRightFront.sidewaysFriction;
+        friction.stiffness = 2f;
+        wheelColliderRightFront.sidewaysFriction = friction;
+
+        friction = wheelColliderLeftFront.sidewaysFriction;
+        friction.stiffness = 2f;
+        wheelColliderLeftFront.sidewaysFriction = friction;
+        }
+        else
+        {
+            friction = wheelColliderRightFront.sidewaysFriction;
+            friction.stiffness = 2f;
+            wheelColliderRightFront.sidewaysFriction = friction;
+
+            friction = wheelColliderLeftFront.sidewaysFriction;
+            friction.stiffness = 2f;
+            wheelColliderLeftFront.sidewaysFriction = friction;
+        }
+        wheelColliderRightFront.brakeTorque = currentbreakForce/4f;
+        wheelColliderLeftFront.brakeTorque = currentbreakForce/4f;
+        wheelColliderLeftBack.brakeTorque = currentbreakForce/4f;
+        wheelColliderRightBack.brakeTorque = currentbreakForce/4f;
     }
 
     private void HandleSteering()
