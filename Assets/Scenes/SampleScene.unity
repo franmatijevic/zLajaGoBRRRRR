@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1802847, g: 0.2257156, b: 0.30692425, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028449, g: 0.2257154, b: 0.3069237, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -256,7 +256,7 @@ WheelCollider:
     m_AsymptoteValue: 2
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.1
+    m_ExtremumSlip: 0.01
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -286,7 +286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 663665315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.977, z: 2.6}
+  m_LocalPosition: {x: 0, y: -0.71, z: 1.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7484757065136999544}
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f328e437d1e47d44a0a8d2b5eb23203, type: 3}
   m_Name: 
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6abfca702e2eb2040959d7553cd471dc, type: 3}
   m_Name: 
@@ -702,7 +702,7 @@ WheelCollider:
     m_AsymptoteValue: 2
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.1
+    m_ExtremumSlip: 0.01
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -763,7 +763,7 @@ WheelCollider:
     m_AsymptoteValue: 2
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.1
+    m_ExtremumSlip: 0.01
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -1077,7 +1077,7 @@ WheelCollider:
     m_AsymptoteValue: 2
     m_Stiffness: 1
   m_SidewaysFriction:
-    m_ExtremumSlip: 0.1
+    m_ExtremumSlip: 0.01
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
@@ -1595,7 +1595,7 @@ MonoBehaviour:
   wheelLeftBack: {fileID: 779225942}
   wheelRightBack: {fileID: 1392802876}
   motorTorque: 5000
-  maxSteer: 20
+  maxSteer: 25
 --- !u!114 &7824127258144429765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1608,9 +1608,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084943e6f4b72a946bb661f6a1061abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  centerOfMass: {fileID: 663665316}
   motorForce: 2000
   breakForce: 3000
-  maxSteerAngle: 20
+  maxSteerAngle: 23
   wheelColliderLeftFront: {fileID: 376860431}
   wheelColliderRightFront: {fileID: 1147042714}
   wheelColliderLeftBack: {fileID: 1026908503}

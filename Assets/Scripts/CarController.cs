@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+    public Transform centerOfMass;
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
 
@@ -28,7 +29,12 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform wheelRightFront;
     [SerializeField] private Transform wheelLeftBack;
     [SerializeField] private Transform wheelRightBack;
-
+    private Rigidbody _rigidbody;
+    void Start()
+    {
+        _rigidbody = GetComponent<Rigidbody>();
+        _rigidbody.centerOfMass = centerOfMass.localPosition;
+    }
     private void FixedUpdate()
     {
         GetInput();
@@ -57,23 +63,24 @@ public class CarController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         { 
-        friction = wheelColliderRightFront.sidewaysFriction;
-        friction.stiffness = 2f;
-        wheelColliderRightFront.sidewaysFriction = friction;
+        friction = wheelColliderRightBack.sidewaysFriction;
+        friction.extremumSlip = 0.7f;
+        wheelColliderRightBack.sidewaysFriction = friction;
 
-        friction = wheelColliderLeftFront.sidewaysFriction;
-        friction.stiffness = 2f;
-        wheelColliderLeftFront.sidewaysFriction = friction;
+        friction = wheelColliderLeftBack.sidewaysFriction;
+        friction.extremumSlip = 0.7f;
+        wheelColliderLeftBack.sidewaysFriction = friction;
+
         }
         else
         {
-            friction = wheelColliderRightFront.sidewaysFriction;
-            friction.stiffness = 2f;
-            wheelColliderRightFront.sidewaysFriction = friction;
+            friction = wheelColliderRightBack.sidewaysFriction;
+            friction.extremumSlip = 0.05f;
+            wheelColliderRightBack.sidewaysFriction = friction;
 
-            friction = wheelColliderLeftFront.sidewaysFriction;
-            friction.stiffness = 2f;
-            wheelColliderLeftFront.sidewaysFriction = friction;
+            friction = wheelColliderLeftBack.sidewaysFriction;
+            friction.extremumSlip = 0.05f;
+            wheelColliderLeftBack.sidewaysFriction = friction;
         }
         wheelColliderRightFront.brakeTorque = currentbreakForce/4f;
         wheelColliderLeftFront.brakeTorque = currentbreakForce/4f;
